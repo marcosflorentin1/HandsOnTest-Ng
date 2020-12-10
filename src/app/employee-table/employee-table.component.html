@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <tr>
+    <th *ngFor="let column of headers">
+      {{ column }}
+    </th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let row of employees">
+      <td *ngFor="let column of headers">
+        {{ row[column] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
